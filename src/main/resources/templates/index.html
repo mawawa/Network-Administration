@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link  rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}">
+
+  <title>Network Administration</title>
+</head>
+<body>
+<h1 class="animate__animated animate__bounce d-flex justify-content-center mt-20rem">Welcome to Network Administration</h1>
+<nav class=" animate__animated animate__backInDown navbar-dark bg-dark navbar navbar-expand-lg navbar-light bg-light
+container shadow-lg p-3 mb-5  rounded ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul  class="animate__animated animate__fadeIn animate__delay-1s navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link active " th:href="@{/}">Home<span class="sr-only"></span></a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+        </span>
+  </div>
+</nav>
+
+<div class="animate__animated animate__backInDown container shadow-lg p-3 mb-5 bg-white rounded ">
+  <h1>
+    Introduction
+  </h1>
+
+  <a th:href="@{documents/l1.pdf}">Lecture Notes</a>
+  <br/>
+</div>
+
+<div class="animate__animated animate__backInDown container shadow-lg p-3 mb-5 bg-white rounded ">
+  <h2>
+    Object Oriented Design
+  </h2>
+  This in networking speaks mostly on defining components as objects. This allows
+  for the Network Systems to be able to be hidden to other components able to
+  be viewed by other components.
+
+  There are objects like
+  <ul>
+    <li>Directories</li>
+    <li>Files</li>
+  </ul>
+   In object-oriented design there is the use of the following concepts for example
+  <ul>
+    <li>Data Structures</li>
+    <li>Error Handling</li>
+    <li>Testing</li>
+  </ul>
+  Data structures are important in linux since the files in linux are organised as a tree structure.
+  This interns need for an understanding the best data structures and tree searches. there is also the
+  deep look at the fact of the kinds of algorithms used in searches.
+</div>
+<div class="animate__animated animate__backInDown container shadow-lg p-3 mb-5 bg-white rounded ">
+  <h2>Unix File and Directory and permissions</h2>
+  In unix there are three access permission bits:
+  <ul>
+    <li>Owner</li>
+    <li>group</li>
+    <li>Other</li>
+  </ul>
+  <h3>File Permissions</h3>
+  There are also three kinds of permissions for files and they are
+  <ul>
+    <li>read</li>
+    <li>write</li>
+    <li>execute</li>
+  </ul>
+  Usually the ececute is reserved for administrations
+  <h3>Directory Permission</h3>
+  there are also directory permissions they are also that same as file permission
+  although they have different characteristics.
+  <dl>
+    <dt>read</dt>
+    <dd>This allow a compnet to be able to read a file</dd>
+    <dt>Write</dt>
+    <dd>this allow a componetn to create, edit or delete fiels in a directory</dd>
+    <dt>Excecute</dt>
+    <dd>This allows a component to open and change contents of a directory</dd>
+  </dl>
+
+  <h3>Example for file permission</h3>
+  drwx--xr-- <br>
+  the above permission mean that we are working on a directory
+  while the order is <b>owner</b>, <b>group</b>, ,<b>other</b>
+  <br>
+  the permission can also be defined in form of number for example the
+  command
+  ,<b>chmod 777</b>
+  <br>this is a full-access for all the three types of components. that is
+  <b>owners, groups and others.</b>
+</div>
+<div class="animate__animated animate__backInDown container shadow-lg p-3 mb-5 bg-white rounded ">
+  <h2>Processes and Threads</h2>
+  A <b>process</b> can have smaller processes called <b>Threads</b>
+  in usual cases this is when one would want to have acychonous execution.
+  This means that a process spawns new threads.
+</div>
+
+
+
+</body>
+</html>
