@@ -9,8 +9,15 @@ import org.springframework.web.servlet.ModelAndView;
 public class NetworkAdministrationController {
 
 
+    //Lecture 1
     @RequestMapping("/")
     public ModelAndView networkAdministration(){
         return new ModelAndView("index.html");
+    }
+
+    //Lecture 2
+    @RequestMapping("/accountAndSecurityAdministration")
+    public ModelAndView accountAndSecurityAdministration(){
+        return new ModelAndView("Account and Security Administration and Access Control.html");
     }
 }
